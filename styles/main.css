@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.intro {
+    background: linear-gradient( to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 70vh;
+    color: white;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.container {
+    width: 95%;
+    margin: auto;
+}
+.block {
+    background-image: linear-gradient(45deg, #f4f4f4 25%, #3728d6 25%, #3728d6 50%, #f4f4f4 50%, #f4f4f4 75%, #3728d6 75%, #3728d6 100%);
+    background-size: 56.57px 56.57px;
+}
+.my-5 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.col-10 {
+    width: 90%;
+}
+.display-4 span {
+    font-size: 5rem;
+    font-weight: 700;
+    opacity: 0.2;
+}
+ul.list li {
+    list-style: none;
+    padding-left: 40px;
+    font-size: 24px;
+}
+ul.list li i {
+    color: green;
+    font-weight: 700;
+}
+.contact-card {
+    border: 1px solid #f4f4f4;
+    background-color: #f4f4f4;
+    border-radius: 21px;
+    padding: 16px;
+    width: 750px;
+    margin: auto;
+    margin-top: -120px;
+}
+/* table css */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    padding-left: 20px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+/*table css*/
+@media(max-width:850px){
+    .contact-card {
+        border: 1px solid #f4f4f4;
+        background-color: #f4f4f4;
+        border-radius: 21px;
+        padding: 16px;
+        width: 650px;
+        margin: auto;
+        margin-top: -120px;
+    }
+}
+@media(max-width: 725px){
+    .display-4 {
+        font-size: 4rem;
+    }
+    .contact-card {
+        border: 1px solid #f4f4f4;
+        background-color: #f4f4f4;
+        border-radius: 21px;
+        padding: 16px;
+        width: 550px;
+        margin: auto;
+        margin-top: -110px;
+    }
+}
+@media(max-width: 625px){
+    .display-4 {
+        font-size: 4rem;
+    }
+    .contact-card {
+        border: 1px solid #f4f4f4;
+        background-color: #f4f4f4;
+        border-radius: 21px;
+        padding: 16px;
+        width: 450px;
+        margin: auto;
+        margin-top: -90px;
+    }
+    .flip-box {
+        background-color: transparent;
+        width: 80%;
+        margin: auto;
+        height: 340px;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+    .img-fluid {
+        width: 100%;
+        margin: auto;
+        height: 340px;
+    }
+}
+@media(max-width: 525px){
+
+    .display-4 {
+        font-size: 3rem;
+    }
+    .contact-card {
+        border: 1px solid #f4f4f4;
+        background-color: #f4f4f4;
+        border-radius: 21px;
+        padding: 16px;
+        width: 330px;
+        margin: auto;
+        margin-top: -80px;
+    }
+    .flip-box {
+        background-color: transparent;
+        width: 80%;
+        margin: auto;
+        height: 320px;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+    .img-fluid {
+        width: 80%;
+        margin: auto;
+        height: 320px;
+    }
+}
+@media(max-width: 420px){
+    .contact-card {
+        border: 1px solid #f4f4f4;
+        background-color: #f4f4f4;
+        border-radius: 21px;
+        padding: 16px;
+        width: 310px;
+        margin: auto;
+        margin-top: -90px;
+    }
+}
+.form-control {
+    width: 100%;
+    margin-bottom: 7px;
+    padding: 9px;
+    border-radius: 12px;
+    border: 1px solid lightgrey;
+}
+.btn {
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 23px;
+    font-size: 17px;
+}
+.btn-sm {
+    font-size: 14px!important;
+    padding:5px!important;
+}
+.btn:hover {
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+}
+a.btn {
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 23px;
+    font-size: 17px;
+    text-decoration: none;
+}
+a.btn:hover {
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+}
+.coaches-row {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    width: 100%;
+}
+.coaches-content {
+    padding-left: 30px;
+}
+.coaches-content h2 {
+    font-size: 3rem;
+}
+.coaches-content p {
+    font-size: 1.7rem;
+}
+.display-5 {
+    font-size: 2rem;
+    margin-bottom: 7px;
+}
+.h1 {
+    font-size: 3rem;
+}
+.text-muted {
+    font-size: 1.4rem!important;
+    color: grey;
+}
+.col {
+    margin: 25px;
+}
+/* rotating images */
+.flip-box {
+    background-color: transparent;
+    width: 100%;
+    height: 240px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+/* banner */
+.banner {
+    background-color: steelblue;
+    color: white;
+    padding: 40px;
+    margin-bottom: 60px;
+}
+.banner-row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.banner-image {
+    border-radius: 50%;
+    height: 210px;
+    width: 210px;
+}
+.col-4 {
+    width: 30%;
+}
+.col-8 {
+    width: 70%;
+}
+/* banner */
+.img-fluid {
+    height: 240px;
+    width: 100%;
+}
+.articles-row {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.round img {
+  width: 170px;
+    margin: auto;
+    max-height: 170px;
+}
+/* rotating images */
+.card-img {
+    height: 240px;
+    width: 100%;
+}
+@media(max-width: 1150px) {
+    .coaches-row {
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
+    }
+    .card-img {
+        height: 290px;
+        width: 100%;
+    }
+    .flip-box {
+        background-color: transparent;
+        width: 80%;
+        margin: auto;
+        height: 290px;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+    .img-fluid {
+        width: 100%;
+        margin: auto;
+        height: 370px;
+    }
+}
+@media(max-width: 992px) {
+    .coaches-row {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+    }
+    .card-img {
+        height: 390px;
+        width: 100%;
+    }
+    .flip-box {
+        background-color: transparent;
+        width: 80%;
+        margin: auto;
+        height: 390px;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+    .articles-row {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .img-fluid {
+        width: 100%;
+        margin: auto;
+        height: 360px;
+    }
+}
+@media(max-width: 868px) {
+    .banner-row {
+        display: block;
+        width: 100%;
+        align-items: center;
+    }
+    .col-4 {
+        width: 100%;
+    }
+    .col-8 {
+        margin-top: 14px;
+        width: 100%;
+    }
+}
+.footer-wrapper {
+    padding: 50px;
+}
+.footer-links {
+    padding-top: 30px;
+    display: flex;
+    width: 100%;
+}
+.footer-links div.left {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+.footer-links div.right {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+div.right a {
+    text-decoration: none;
+    margin-left: 12px;
+}
